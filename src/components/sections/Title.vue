@@ -4,16 +4,16 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = './logo.png'
+const logo = ''
 
 // 标题
-const title = 'Academic Project Page Template'
+const title = 'CM2-RefIRVSR: '
 
 // 标题颜色
 const title_color = '#000000'
 
 // 标题补充，没有则置为''即可
-const title_supp = ' (Vue based)'
+const title_supp = ' Cross-modal Feature Matching for Visible-Referenced Infrared Video Super-Resolution'
 
 // 标题补充颜色
 const title_supp_color = '#42B883'
@@ -24,55 +24,63 @@ const btn_color = '#444444'
 // 作者清单（包含作者姓名、头像、主页、地址序号）
 const authors = [
   {
-    name: "Your Name",
-    icon: "./icon/junyaohu.jpg",
-    homepage: "https://junyaohu.github.io/",
-    address_flag: "1,#"
+    name: "Xuesong Wang",
+    icon: "./icon/wangxuesong.jpg",
+    homepage: "https://dierwang101.github.io/xuesongwangFZU.github.io/",
+    address_flag: "1"
   },
   {
-    name: "Anya Forger",
-    icon: "./icon/anya.jpg",
-    homepage: "https://www.bilibili.com/video/BV1jv4y1P7Bb",
-    address_flag: "2,#"
-  },
-  {
-    name: "BugCat Capoo",
+    name: "Honghui Liu",
     icon: "./icon/capoo.webp",
-    homepage: "https://zh.moegirl.org.cn/%E7%8C%AB%E7%8C%AB%E8%99%AB%E5%92%96%E6%B3%A2",
+    homepage: "",
+    address_flag: "1"
+  },
+  {
+    name: "Xianyu Wu",
+    icon: "./icon/wuxianyu.jpg",
+    homepage: "https://jxxy.fzu.edu.cn/info/1366/10813.htm",
     address_flag: "1,*"
   },
+  {
+    name: "Feng Huang",
+    icon: "./icon/Huangfen.jpg",
+    homepage: "https://jxxy.fzu.edu.cn/info/1218/8092.htm",
+    address_flag: "1,*"
+  }
 ]
 
 // 地址清单（包含地址名称、头像、主页、地址序号）
 const addresses = [
   {
     address_flag: "1",
-    name: "Home University",
-    icon: "./icon/home.png",
-    homepage: "https://github.com/hmuniversity"
+    name: "Fuzhou University", 
+    icon: "./icon/school.jpg",
+    homepage: "https://en.fzu.edu.cn/"
   },
-  {
-    address_flag: "2",
-    name: "IKUN University",
-    icon: "./icon/ikun.avif",
-    homepage: "https://www.bilibili.com/video/BV178411Y7QB"
-  },
+  // {
+  //   address_flag: "2",
+  //   name: "IKUN University",
+  //   icon: "./icon/ikun.avif",
+  //   homepage: "https://www.bilibili.com/video/BV178411Y7QB"
+  // },
 ]
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+  "*: Corresponding Author."
+  // const con_and_corresponding_author = 
+  // "#: Equal Contribution. *: Corresponding Author."
 
 // 最新消息
-const news = "🔥 [2024-12-15] This template project is still under development."
+// const news = "🔥 [2024-12-15] This template project is still under development."
 
 // 强调内容
-const emphases = [
-  "🎉 [ABCD 2024] Poster",
-  "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
-  "传递人工智能算法科普教育的减约理解",
-  "提升信息效率及认知维度"
-]
+// const emphases = [
+//   "🎉 [ABCD 2024] Poster",
+//   "🥰 欢迎关注“减论”微信公众号/B站/知乎/小红书",
+//   "传递人工智能算法科普教育的减约理解",
+//   "提升信息效率及认知维度"
+// ]
 
 // 提供引导资料链接
 const buttons = [
@@ -82,44 +90,51 @@ const buttons = [
     component: Document,
   },
   {
-    disabled: true,
-    name: "中译版",
-    component: Document,
-  },
-  {
     disabled: false,
     name: "Code",
-    link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
+    link: "https://github.com/dierwang101/CM2RefIRVSR",
     component: Files,
   },
   {
     disabled: false,
-    name: "Demo",
-    link: "https://junyaohu.github.io/academic-project-page-template-vue",
-    component: MagicStick,
-  },
-  {
-    disabled: true,
-    name: "Poster",
-    component: Picture,
-  },
-  {
-    disabled: true,
-    name: "Slide",
-    component: DataAnalysis,
+    name: "synthetic RealMCVSR",
+    link: "https://pan.baidu.com/s/1ds2saSVME63xdSy1Mjhx5g?pwd=2xfz",
+    component: Files,
   },
   {
     disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
-    component: Film,
+    name: "RealCMVSR",
+    link: "https://pan.baidu.com/s/1cM_42xPufXdkeNQ6_gwb_A?pwd=bqhb",
+    component: Files,
   },
-  {
-    disabled: false,
-    name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
-    component: Film,
-  },
+  // {
+  //   disabled: false,
+  //   name: "Demo",
+  //   link: "https://junyaohu.github.io/academic-project-page-template-vue",
+  //   component: MagicStick,
+  // },
+  // {
+  //   disabled: true,
+  //   name: "Poster",
+  //   component: Picture,
+  // },
+  // {
+  //   disabled: true,
+  //   name: "Slide",
+  //   component: DataAnalysis,
+  // },
+  // {
+  //   disabled: false,
+  //   name: "Video (减论)",
+  //   link: "https://www.bilibili.com/video/BV15XkgYiE73/",
+  //   component: Film,
+  // },
+  // {
+  //   disabled: false,
+  //   name: "Video (Tutorial)",
+  //   link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
+  //   component: Film,
+  // },
 ]
 
 </script>
@@ -130,7 +145,7 @@ const buttons = [
     <!-- 最新消息提示 -->
     <el-row justify="center">
       <el-col :span="24">
-        <el-alert title="🔥 This template is still under development." type="success" />
+        <el-alert title="" type="success" />
       </el-col>
     </el-row>
 
@@ -179,9 +194,9 @@ const buttons = [
     </el-row>
 
     <!-- 强调内容 -->
-    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
+    <!-- <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
         {{ emphasis }}
-    </el-row>
+    </el-row> -->
 
     <!-- 提供引导按钮 -->
     <el-row justify="center" style="margin-bottom: 20px;">

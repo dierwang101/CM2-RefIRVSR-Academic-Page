@@ -42,10 +42,10 @@ export default {
 
 <template>
   <Title/>
-  <Carousel/>
+  <!-- <Carousel/> -->
   <Video/>
   <Abstract/>
-  <Markdown/>
+  <!-- <Markdown/>
   <Latex/>
   <Table/>
   <Collapse/>
@@ -56,6 +56,6 @@ export default {
   <ImageSliderInner/>
   <ImageSlider/>
   <ImageSelector/>
-  <BibTeX/>
-  <Comment/>
-</template>
+   <BibTeX/>
+  <Comment/> -->
+</template> 

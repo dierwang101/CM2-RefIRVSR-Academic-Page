@@ -1,22 +1,26 @@
 <script>
 import { Swiper, SwiperSlide} from 'swiper/vue';
-import { Navigation, Pagination, Autoplay} from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 
 export default {
+  props: {
+    showCarousel: {
+      type: Boolean,
+      default: true
+    }
+  },
   components: {
       Swiper,
       SwiperSlide,
       Navigation,
       Pagination,
-      Autoplay,
     },
   data() {
     return {
       modules: [
         Navigation,
         Pagination,
-        Autoplay,
       ],
       // 选择要轮播的照片
       image_paths: [
@@ -33,11 +37,11 @@ export default {
 </script>
 
 <template>
-  <el-row justify="center">
+  <el-row justify="center" v-if="showCarousel">
     <el-col :span="24">
       <!-- 设置轮播图：循环播放、首张图序号、响应式、导航和分页、自动播放 -->
       <swiper
-        :loop="true"
+        :loop="false"
         :slidesPerView="1"
         :breakpoints="{
           600: {
@@ -56,11 +60,7 @@ export default {
           clickable:true, 
           type:'bullets' 
         }"
-        :autoplay="{ 
-          delay:5000,
-          disableOnInteraction:false,
-          pauseOnMouseEnter:true,
-        }"
+        :autoplay="false"
         >
         <swiper-slide v-for="path in image_paths">
           <el-image :src="path"/>
@@ -78,4 +78,3 @@ export default {
 }
 
 </style>
-  

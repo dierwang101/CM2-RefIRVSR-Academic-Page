@@ -6,29 +6,29 @@ import { HomeFilled, SuccessFilled } from '@element-plus/icons-vue'
 // 个人主页
 const home = {
     name: "My Blog",
-    link: "https://junyaohu.github.io/",
+    link: "https://dierwang101.github.io/xuesongwangFZU.github.io/",
 }
 
 // 项目主页
 const logo = {
-    name: "Template",
+    name: "CM<sup>2</sup>-REFIRVSR",
     link: "#",
 }
 
 // 右侧更多菜单
 const more_paper = {
     "ExtDM": {
-        name: "ExtDM - CVPR 2024",
-        link: "https://zzcheng.top/ExtDM/",
+        name: "LVTSR",
+        link: "https://dierwang101.github.io/WebforLVTSR.github.io/",
     },
-    "MPOT": {
-        name: "MPOT - ICCV 2023",
-        link: "https://zzcheng.top/MPOT/",
-    },
-    "ControlNet": {
-        name: "ControlNet - ICCV 2023",
-        link: "https://github.com/lllyasviel/ControlNet",
-    }
+    // "MPOT": {
+    //     name: "MPOT - ICCV 2023",
+    //     link: "https://zzcheng.top/MPOT/",
+    // },
+    // "ControlNet": {
+    //     name: "ControlNet - ICCV 2023",
+    //     link: "https://github.com/lllyasviel/ControlNet",
+    // }
 }
 
 </script>
@@ -53,7 +53,7 @@ const more_paper = {
         <!-- 项目主页 -->
         <el-menu-item index="1">
             <el-icon :size="20"><SuccessFilled /></el-icon>
-            <a :href=logo.link>{{ logo.name }} </a>
+            <a :href=logo.link v-html="logo.name"></a>
         </el-menu-item>
 
         <!-- 更多栏目 -->
@@ -61,12 +61,6 @@ const more_paper = {
             <template #title>More</template>
             <el-menu-item index="2-1">
                 <a :href=more_paper.ExtDM.link>{{ more_paper.ExtDM.name }}</a>
-            </el-menu-item>
-            <el-menu-item index="2-2">
-                <a :href=more_paper.MPOT.link>{{ more_paper.MPOT.name }}</a>
-            </el-menu-item>
-            <el-menu-item index="2-3">
-                <a :href=more_paper.ControlNet.link>{{ more_paper.ControlNet.name }}</a>
             </el-menu-item>
         </el-sub-menu>
 
@@ -125,5 +119,3 @@ a {
 }
 
 </style>
-
-  
