@@ -35,14 +35,18 @@ const links = {
 
 /* 页脚背景 */
 .bg {
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(245, 245, 245, 0.5);
 }
 
-/* 页脚文字 */
+/* 页脚文字 - 调整为更不显眼的样式 */
 .footer {
   text-align: center;
-  margin: 20px;
+  margin: 1px 0;
+  font-size: 8px;
+  color: #aaa;
   z-index: 1;
+  line-height: 1;
+  opacity: 0.6;
 }
 
 </style>
